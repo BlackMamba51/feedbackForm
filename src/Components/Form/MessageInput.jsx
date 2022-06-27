@@ -1,9 +1,9 @@
 import React from "react";
 
-function MessageInput() {
+function MessageInput({ messageInputHandler }) {
 
   return(
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="textarea" id="textarea" cols="25" rows="10" maxLength={300} onChange={(e) => messageInputHandler(e)}></textarea>
   )
 }
 
