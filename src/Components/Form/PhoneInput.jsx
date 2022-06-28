@@ -1,12 +1,12 @@
 import React from "react";
 import MyInput from "../UI/Inputs/MyInput";
 
-function PhoneInput({ phoneInputHandler }) {
+function PhoneInput({ phoneInputHandler, phoneInput }) {
 
   return(
     <div className="phone-section">
       <div className="phone-example">+7(123)345-67-89</div>
-      <MyInput onChange={(e) => phoneInputHandler(e)} type="tel" placeholder="Your phone number"/>
+      <MyInput value={phoneInput} onChange={(e) => phoneInputHandler(e)} type="tel" placeholder="+7(123)345-67-89"/>
     </div>
   )
 }

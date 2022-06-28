@@ -34,6 +34,9 @@ textarea {
 .sumbit-button:hover {
   box-shadow: 5px 5px 10px rgb(1, 241, 193);
 }
+.sumbit-button:disabled {
+  background-color: grey;
+}
 .phone-section {
   position: relative;
 }

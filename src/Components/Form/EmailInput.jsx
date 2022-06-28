@@ -1,10 +1,10 @@
 import React from "react";
 import MyInput from "../UI/Inputs/MyInput";
 
-function EmailInput({ emailInputHandler }) {
+function EmailInput({ emailInputHandler, emailInput }) {
 
   return(
-    <MyInput id="email" type="text" placeholder="Your email" onChange={(e) => emailInputHandler(e)}/>
+    <MyInput value={emailInput} id="email" type="text" placeholder="example123@mail.ru" onChange={(e) => emailInputHandler(e)}/>
   )
 }
 

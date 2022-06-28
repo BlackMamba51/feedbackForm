@@ -1,10 +1,10 @@
 import React from "react";
 import MyInput from "../UI/Inputs/MyInput";
 
-function NameInput({ nameInputHandler }) {
+function NameInput({ nameInputHandler, nameInput }) {
 
   return (
-    <MyInput onChange={(e) => nameInputHandler(e)} type="text" placeholder="Your name and surname"/>
+    <MyInput value={nameInput} onChange={(e) => nameInputHandler(e)} type="text" placeholder="Ivan Ivanov"/>
   )
 }
 

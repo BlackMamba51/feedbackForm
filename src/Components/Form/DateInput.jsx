@@ -1,10 +1,10 @@
 import React from "react";
 import MyInput from "../UI/Inputs/MyInput";
 
-function DateInput({ dateInputHandler }) {
+function DateInput({ dateInputHandler, dateInput }) {
 
   return(
-    <MyInput type="date" placeholder="Your birthday" onChange={(e) => dateInputHandler(e)}/>
+    <MyInput value={dateInput} type="date" placeholder="Your birthday" onChange={(e) => dateInputHandler(e)}/>
   )
 }
 
